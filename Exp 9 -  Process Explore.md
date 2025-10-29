@@ -10,10 +10,17 @@ To monitor and identify suspicious process activities in a Windows system using 
 1. **📥 Download and Extract Procmon**  
    - Obtain *Process Monitor* from the official Microsoft Sysinternals website.  
    - Extract the downloaded ZIP file.
+   
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/c1bdb2e5-9c0c-4251-b320-480d70d626e8" alt="Screenshot 1">
+   </p>
+
 
 2. **🛠️ Run Procmon as Administrator**  
    - Right-click `Procmon.exe` → *Run as Administrator* to grant system-level access.  
    <p align="center">
+      <img width="907" height="525" alt="Screenshot 2025-10-29 141723" src="https://github.com/user-attachments/assets/d01f3106-16c5-4e53-828d-f2a8c65c2a8c" />
+
    </p>
 
 3. **▶️ Start Capture**  
@@ -33,6 +40,8 @@ To monitor and identify suspicious process activities in a Windows system using 
      - `Process Name contains suspicious.exe`  
      - `Operation contains WriteFile` or `CreateProcess`  
    <p align="center">
+      <img width="596" height="355" alt="Screenshot 2025-10-29 142053" src="https://github.com/user-attachments/assets/4d83b981-490a-4d93-aaba-098ba8bbdaf4" />
+
    </p>
 
 7. **📊 Analyze Captured Events**  
@@ -42,12 +51,10 @@ To monitor and identify suspicious process activities in a Windows system using 
    <p align="center">
    </p>
 
-8. **🧹 Close Procmon**  
-   - Stop monitoring and review saved logs for evidence of persistence, code injection, or other malicious indicators.
+8.
 
----
-
-## ✅ Result
-Successfully used **Procmon** to capture and analyze real-time system process activities.  
-Suspicious processes performing abnormal operations — including registry edits, file writes, or unauthorized executions — were identified, revealing indicators of potential malicious behavior.
+* Run a comprehensive antivirus scan.  
+* Use malware removal tools (e.g., Malwarebytes or Windows Defender) for a thorough cleanup.
+##  Result
+ **Hence, the analysis of suspicious processes using Process Explorer was performed successfully.**
 
