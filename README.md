@@ -11,3 +11,5 @@ This repository contains the lab exercises for the **Digital Forensics Laborator
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp.No%20-3%20wireshark.md" target="_blank">Exp.No.3 – Wireshark</a>  
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp.No-4%20MHA.md" target="_blank">Exp.No.4 – Mail Header Analysis (MHA)</a>  
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp.No-5%20Autopsy.md" target="_blank">Exp.No.5 – Autopsy</a>  
+<a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%206-Sleuth%20Kit.md" target="_blank">Exp 6-Sleuth Kit</a>  
+<a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%207%20-AFLogical.md" target="_blank">Exp 7-AFLogical OSEt</a>  
