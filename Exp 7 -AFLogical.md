@@ -11,14 +11,9 @@ To extract logical data such as contacts, SMS, and call logs from an Android dev
 - [Android Platform Tools (ADB)](https://developer.android.com/tools/releases/platform-tools)
 - [AFLogical OSE ZIP (source or APK)](https://sourceforge.net/projects/santoku/)
 - [Google USB Driver (for Windows)](https://developer.android.com/studio/run/win-usb)
-
  *Instructions:*
-1. Create a main folder for your lab:
-   
-   C:\ForensicLab
-   
+1. Create a main folder for your lab:  C:\ForensicLab 
 2. Extract all the downloaded ZIP files into it:
-   
    C:\ForensicLab\platform-tools\
    C:\ForensicLab\aflogical-ose\
    C:\ForensicLab\usb-driver\
