@@ -13,3 +13,10 @@ This repository contains the lab exercises for the **Digital Forensics Laborator
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp.No-5%20Autopsy.md" target="_blank">Exp.No.5 – Autopsy</a>  
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%206-Sleuth%20Kit.md" target="_blank">Exp 6-Sleuth Kit</a>  
 <a href="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%207%20-AFLogical.md" target="_blank">Exp 7-AFLogical OSEt</a>  
+<a herf="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%208-%20steganography.md" target="_blank">Exp 8- steganography</a>
+<a herf="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%209%20-%20%20Process%20Explore.md" target="_blank">Exp 9 - Process Explorer</a>
+<a herf="https://github.com/Veera03122005/DF-Lab-Experiments/blob/main/Exp%2010-%20Gidhra.md" target="_blank">Exp 10- Gidhra</a>
+
+
+
+
