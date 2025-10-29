@@ -25,11 +25,9 @@
 2. ** Install Java:** Ensure JRE is installed on your machine.
 3. ** Prepare environment:** Place the `StegExpose.jar` file in a dedicated working folder.
 
-<details>
-<summary>📂 View Setup Environment</summary>
 <p align="center">
 </p>
-</details>
+
 
 ---
 
@@ -41,12 +39,10 @@
 - Collect the images you suspect might contain hidden data.
   StegExpose supports common image formats such as **.png**, **.jpg**, and **.bmp**.
 
-<details>
-<summary>🖼️ View Image Selection</summary>
-<br>
+
 <p align="center">
 </p>
-</details>
+
 
 ---
 
@@ -57,12 +53,9 @@
 **📋 Instructions:**
 - 💻 Navigate to the folder where the `StegExpose.jar` file is located using your Command Prompt (Windows) or Terminal (Linux/macOS).
 
-<details>
-<summary>🖥️ View Command Line Navigation</summary>
-<br>
 <p align="center">
 </p>
-</details>
+
 
 ---
 
@@ -106,17 +99,14 @@ Result: 0.4
 Steganography likely present
 ```
 
-<details>
 
 <p align="center">
 </p>
-</details>
 
-<details>
+
 
 <p align="center">
 </p>
-</details>
 
 ---
 
