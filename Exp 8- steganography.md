@@ -1,164 +1,100 @@
-# Ex.No.8 — Use StegExpose to Detect Hidden Data in Images
+#  Ex.No.8 — Detect Hidden Data in Images Using StegExpose
 
 ---
 
-## 📝 Description
-**StegExpose** is a specialized tool used for **steganography analysis**. It works by evaluating the **statistical properties** of an image to estimate the probability of hidden data being embedded within it. This process helps forensic investigators detect steganography techniques like Least Significant Bit (LSB) embedding.
+##  Aim
+
+To detect hidden data in image files using **StegExpose**, a steganography analysis tool.
 
 ---
-
-## 🛠️ Requirments
-
-- ** Java Runtime Environment (JRE):** StegExpose is a Java-based application and requires JRE to run.
-- ** StegExpose Tool:** Download the latest `.jar` file from the official StegExpose GitHub repository.
-
+## Procedure
 ---
 
-## 📋 Step-by-Step Process
+##  Step 1 — Compile the Source Code
 
-### Step 1: Download and Set Up StegExpose
+Compile the Java files with the required dependency:
 
-**🎯 Purpose:** Set up the StegExpose environment for steganography detection.
-
-**📋 Instructions:**
-1. ** Download the tool:** Obtain the `StegExpose.jar` file from the GitHub repository.
-2. ** Install Java:** Ensure JRE is installed on your machine.
-3. ** Prepare environment:** Place the `StegExpose.jar` file in a dedicated working folder.
-
-<p align="center">
-</p>
-
-
----
-
-### Step 2: Select Images for Analysis
-
-**🎯 Purpose:** Prepare suspect images for steganographic analysis.
-
-**📋 Instructions:**
-- Collect the images you suspect might contain hidden data.
-  StegExpose supports common image formats such as **.png**, **.jpg**, and **.bmp**.
-
-
-<p align="center">
-</p>
-
-
----
-
-### Step 3: Open  Terminal
-
-**🎯 Purpose:** Access the command line interface for running StegExpose.
-
-**📋 Instructions:**
-- 💻 Navigate to the folder where the `StegExpose.jar` file is located using your Command Prompt (Windows) or Terminal (Linux/macOS).
-
-<p align="center">
-</p>
-
-
----
-
-### Step 4: Run StegExpose on an Image
-
-**🎯 Purpose:** Execute steganographic analysis on a single image file.
-
-**💻 Command Structure:**
 ```bash
-java -jar StegExpose.jar <image_file_path>
+javac -cp commons-math3-3.1.1.jar -source 1.8 -target 1.8 *.java
 ```
 
-**📄 Example:**
+<img width="1362" height="181" alt="image" src="https://github.com/user-attachments/assets/63664843-3853-4a80-9b22-31ea72b4a717" />
+
+
+ Note: Ignore warnings like `RSAnalysis.java uses unchecked or unsafe operations`. Compilation is successful if `.class` files are generated.
+
+---
+
+##  Step 2 — Create the Executable JAR
+By using Notepad
+Create a file named `manifest.mf` in the same folder:
+
+```
+Main-Class: StegExpose
+```
+<img width="400" alt="exp8 4" src="https://github.com/user-attachments/assets/dcebf216-9a39-4b63-a93f-58a2a15371d4" />
+
+
+Build the JAR:
+
 ```bash
-java -jar StegExpose.jar test_image.png
+jar cfm StegExpose.jar manifest.mf *.class
 ```
+
+ You now have `StegExpose.jar` ready to use.
 
 ---
 
-### Step 5: Analyze the Output
+##  Step 3 — Run StegExpose
 
-**🎯 Purpose:** Interpret the steganographic analysis results.
-
-📊 StegExpose calculates a **"suspect" score** ranging from 0 to 1. **The higher the score, the more likely steganography is present.**
-
-**🎯 Threshold Values:**
-
-| Score Range | Interpretation (Suggested Thresholds) |
-| :---: | :--- |
-| ** Less than 0.2** | Image is considered **clean** (no hidden data detected). |
-| ** 0.2 - 0.3** | **Possibly** some hidden data is present. |
-| ** Above 0.3** | **Likely** that steganography is present. |
-
-**📄 Example Output Analysis:**
 ```bash
-java -jar StegExpose.jar suspect_image.png
+java -jar StegExpose.jar "E:\StegExpose-master\StegExpose-master\testFolder"
 ```
-```makefile
-Analyzing suspect_image.png...
-Result: 0.4
-Steganography likely present
-```
-
-
-<p align="center">
-</p>
-
-
-
-<p align="center">
-</p>
 
 ---
 
-### Step 6: Batch Analysis (Multiple Images)
+##  Step 4 — Example Output
 
-**🎯 Purpose:** Analyze multiple images simultaneously for efficiency.
+<img width="1131" height="97" alt="image" src="https://github.com/user-attachments/assets/87be2baf-09e1-4f11-8583-aac729d911e0" />
 
-**📁 To check multiple images at once, specify the folder path containing the images:**
 
-**💻 Command Structure:**
+| Hidden Bytes   | Meaning                             |
+| -------------- | ----------------------------------- |
+| < 10,000       | Likely clean (no hidden data)       |
+| 10,000–100,000 | Possibly contains hidden data       |
+| > 100,000      | Highly likely steganography present |
+
+---
+
+## Step 5 — Analyze and Verify Results
+
+The tool lists images with potential hidden data and estimates the approximate size. Further validation can be done using tools such as:
+
+* StegSolve
+* OpenStego
+* zsteg
+* Binwalk
+
+---
+
+##  Optional — Export Results Automatically
+
+Generate a results file for easier review:
+
 ```bash
-java -jar StegExpose.jar <folder_path>
+java -jar StegExpose.jar "E:\StegExpose-master\StegExpose-master\testFolder" fast 0.3 results.csv
+
 ```
-
-**📄 Example:**
-```bash
-java -jar StegExpose.jar Images_to_Analyze
-```
-
----
-
-### Step 7: Advanced Options (Optional)
-
-**🎯 Purpose:** Access additional StegExpose parameters and settings.
-
-**❓ To view additional parameters, such as options for adjusting detection sensitivity or output verbosity, use the `--help` flag:**
-
-**💻 Command:**
-```bash
-java -jar StegExpose.jar --help
-```
-
----
-
-### Step 8: Review the Results
-
-**🎯 Purpose:** Evaluate analysis results and determine next steps.
-
-**📋 Instructions:**
-- 📊 Review the scores generated for each image
-- 🎯 Use the threshold values to determine which images require further forensic investigation
-- 🔍 Flag images with high suspect scores for detailed steganographic extraction
-
----
-
-## ✅ Result
-
-The hidden data within the image was successfully detected using StegExpose. The analysis revealed that images with a suspect score above the threshold likely contain embedded steganographic content, confirming the tool's effectiveness in steganography detection.
+<img width="600" alt="exp8 6" src="https://github.com/user-attachments/assets/ceed7805-db8f-4ba4-8cf6-2542eb29c8f0" />
 
 
 ---
+<img width="600" alt="exp8 7" src="https://github.com/user-attachments/assets/bef42a3d-3390-4709-a5f6-41339d2065e5" />
 
+## Result
 
+* Successfully compiled and executed StegExpose
+* Detected images containing potential hidden data
+* Interpreted results and exported findings
 
-
+Hidden data in image files was successfully detected using StegExpose
