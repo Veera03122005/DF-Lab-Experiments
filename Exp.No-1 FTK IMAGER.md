@@ -114,6 +114,23 @@ FTK Imager also supports disk image acquisition.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6b3d6ff2-9e4c-45c2-9ab2-3fac8a74d410" width="400" />
-</p>  
+</p> 
 
-
+ 
+ 
+ ---
+ 
+# Rubrics
+ ---
+  
+  | Criteria | Mark Allotted | Mark Awarded |
+  |---|---:|---:|
+  | 1. GitHub Activity & Submission Regularity | 3 | |
+  | 2. Application of Forensic Tools & Practical Execution | 3 | |
+  | 3. Documentation & Reporting | 2 | |
+  | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+  | *Total* | *10* | |
+  ---
+## Result
+- Successfully captured RAM and disk images using FTK Imager, verified integrity with matching MD5 & SHA1 hashes.  
+The acquired forensic images are ready for analysis using tools like Autopsy, FTK Toolkit, or Volatility.
