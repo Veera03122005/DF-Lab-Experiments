@@ -1,9 +1,5 @@
 # Ex.No.6 — The Sleuth Kit (TSK): Command-Line Digital Forensics
 
-![The Sleuth Kit](https://img.shields.io/badge/The_Sleuth_Kit-4.14.0-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
-![Warning](https://img.shields.io/badge/⚠️-Command_Line-red)
-
 ## Aim
 
 To use **The Sleuth Kit (TSK)**, a collection of command-line tools, to analyze a disk image (`4Dell Latitude CPi.E01`), examine its file system, and recover digital evidence.
@@ -86,7 +82,7 @@ We redirect the output to a file for our report.
 C:\Users\sleuthkit-4.14.0-win32\bin> istat.exe -o 63 "C:\Forensics_Lab\4Dell Latitude CPi.E01" 9871 > C:\Forensics_Lab\metadata_Mr_Evil.txt
 ```
 
-![metadata_Mr_Evil.txt Output](https://github.com/user-attachments/assets/94c3e901-2c15-421e-9213-7a918abbc8fd)
+![WhatsApp Image 2025-10-30 at 22 26 26_c46dd922](https://github.com/user-attachments/assets/639988b7-ab40-4492-94e3-4756a3ecdf7a)
 
 ### Step 6: Recover a File (`icat`)
 
