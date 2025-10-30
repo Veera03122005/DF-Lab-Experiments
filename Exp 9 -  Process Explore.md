@@ -20,13 +20,11 @@ To monitor and identify suspicious process activities in a Windows system using 
    - Right-click `Procmon.exe` → *Run as Administrator* to grant system-level access.  
    <p align="center">
       <img width="907" height="525" alt="Screenshot 2025-10-29 141723" src="https://github.com/user-attachments/assets/d01f3106-16c5-4e53-828d-f2a8c65c2a8c" />
-
    </p>
 
 3. **▶️ Start Capture**  
    - Click the **Capture Events (Ctrl + E)** icon to begin monitoring.  
-   <p align="center">
-   </p>
+   
 
 4. **💻 Perform System Activity**  
    - Carry out normal or suspicious actions, such as running an unknown executable or accessing the registry.
@@ -41,20 +39,27 @@ To monitor and identify suspicious process activities in a Windows system using 
      - `Operation contains WriteFile` or `CreateProcess`  
    <p align="center">
       <img width="596" height="355" alt="Screenshot 2025-10-29 142053" src="https://github.com/user-attachments/assets/4d83b981-490a-4d93-aaba-098ba8bbdaf4" />
-
    </p>
 
 7. **📊 Analyze Captured Events**  
    - Use the **Process Tree** view to inspect parent-child relationships.  
    - Look for abnormal file writes, registry modifications, or process spawns.  
    - Export relevant events as a `.CSV` file for documentation.  
-   <p align="center">
-   </p>
 
-8.
 
 * Run a comprehensive antivirus scan.  
 * Use malware removal tools (e.g., Malwarebytes or Windows Defender) for a thorough cleanup.
+  <p>All system and user processes were successfully displayed with their respective CPU and memory usage. Unsigned or abnormal processes were identified by verifying signatures and observing their file paths.</p>
+
+   # Rubrics
+  
+  | Criteria | Mark Allotted | Mark Awarded |
+  |---|---:|---:|
+  | 1. GitHub Activity & Submission Regularity | 3 | |
+  | 2. Application of Forensic Tools & Practical Execution | 3 | |
+  | 3. Documentation & Reporting | 2 | |
+  | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+  | *Total* | *10* | |
 ##  Result
- **Hence, the analysis of suspicious processes using Process Explorer was performed successfully.**
+ Thus, the analysis of suspicious processes using Process Explorer was performed successfully.
 
