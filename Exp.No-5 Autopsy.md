@@ -1,4 +1,6 @@
+
 # Ex.No.5   Using Autopsy to Create a Case and Import Evidence  
+---
 
 ## Description
  Autopsy is an open-source digital forensics platform used for analyzing and extracting data from digital devices. It allows investigators to process disk images, recover deleted files, analyze user activity, and generate reports.  
@@ -29,20 +31,14 @@ This experiment demonstrates the step-by-step process of creating a case and imp
 - Start the analysis process.
   
  <img width="1705" height="1068" alt="image" src="https://github.com/user-attachments/assets/f1f069b8-fc11-43ba-8bd6-63cf30615a11" />
-  
+ 
 ---
-
-
-
 ### 4. Initial Analysis and Overview  
 - Monitor ingest progress in the status window.  
 - Explore artifacts using the **Tree Viewer**.  
 - Review extracted data such as emails, web history, recent files, and operating system artifacts.
 <img width="1717" height="1068" alt="image" src="https://github.com/user-attachments/assets/fc2953ab-d013-48e2-a87e-5a1eb61cf34b" />
-
-
 ---
-
 ### 5. Detailed Analysis  
 - **Keyword Search:** Perform searches with pre-configured lists or custom keywords.
   <img width="1366" height="768" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/efe22231-7e36-4b05-b05a-9c0e6b9be39a" /> 
@@ -52,27 +48,26 @@ This experiment demonstrates the step-by-step process of creating a case and imp
 
 ---
 
+
 ### 6. Reporting  
 - Generate a forensic report by selecting **Generate Report** from the toolbar.  
 - Choose the desired format (HTML, Excel, or other supported formats).
 - Reports will include artifacts, findings, and case summary.
  <p align=center>
-
 <img width="1366" height="768" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/e6902916-d13d-4789-acd4-41f754889e38" />
-
 <img width="1366" height="768" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/2e48c0f4-1e29-4696-9624-4f09c9a99528" />
-
  </p>
+
 ---
+
 ### 7. Case Closure  
 - Close the case once the investigation is complete.  
 - Archive all data and reports securely according to organizational policies.  
----
 
-
- 
+--- 
  
  # Rubrics
+ ---
   
   | Criteria | Mark Allotted | Mark Awarded |
   |---|---:|---:|
@@ -81,5 +76,12 @@ This experiment demonstrates the step-by-step process of creating a case and imp
   | 3. Documentation & Reporting | 2 | |
   | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
   | *Total* | *10* | |
+  
+  
+  ---
+  
 ## Result  
 - Successfully created a case in Autopsy, imported evidence, performed file system, keyword, timeline, and hash analysis, generated a comprehensive forensic report, and verified Autopsy’s effectiveness for end-to-end digital forensic investigations.
+
+ 
+ ---  
