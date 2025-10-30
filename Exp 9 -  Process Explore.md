@@ -51,7 +51,13 @@ To monitor and identify suspicious process activities in a Windows system using 
 * Use malware removal tools (e.g., Malwarebytes or Windows Defender) for a thorough cleanup.
   <p>All system and user processes were successfully displayed with their respective CPU and memory usage. Unsigned or abnormal processes were identified by verifying signatures and observing their file paths.</p>
 
-   # Rubrics
+
+
+
+
+
+
+    # Rubrics
   
   | Criteria | Mark Allotted | Mark Awarded |
   |---|---:|---:|
