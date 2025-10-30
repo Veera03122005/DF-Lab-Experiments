@@ -38,8 +38,9 @@ To extract logical data such as contacts, SMS, and call logs from an Android dev
    C:\ForensicLab\platform-tools
    
 3. Click *OK* to save changes.
+<p align=center>
 <img width="490" height="478" alt="Screenshot 2025-10-28 123650" src="https://github.com/user-attachments/assets/a1908157-0e0b-4c37-adf6-b4265438a371" />
-
+</p>
 
  *Verify installation:*
 bash
@@ -48,8 +49,10 @@ adb version
 You should see something like:
 
 Android Debug Bridge version 1.0.41
+<p align=center>
 
 <img width="610" height="273" alt="Screenshot 2025-10-28 123734" src="https://github.com/user-attachments/assets/8670fa8f-101f-4842-a6d3-98f6436988c7" />
+</p>
 
 
 ---
@@ -73,9 +76,10 @@ bash
 adb devices
 
 If your phone appears in the list, the driver works.
+<p align=center>
 
 <img width="662" height="295" alt="Screenshot 2025-10-28 123800" src="https://github.com/user-attachments/assets/cdfa49e5-9894-49e5-8040-a7547769ce78" />
-
+</p>
 
 ---
 
@@ -136,9 +140,9 @@ If it shows unauthorized, replug and allow access again.
 3. Wait for:
    
    Success
-   
+   <p align=center>
   <img width="740" height="101" alt="Screenshot 2025-10-28 124027" src="https://github.com/user-attachments/assets/a1f975e7-78dd-4979-a304-4a73eb16e870" />
-
+  </p>
 
  *Verification:* Check your phone — the *AFLogical* app should now appear in your app list.
 
@@ -189,9 +193,9 @@ calllog.csv
  *Command:*
 bash
 adb pull /sdcard/aflogical C:\ForensicLab\output
-
+<p align=center>
 <img width="685" height="127" alt="Screenshot 2025-10-28 124516" src="https://github.com/user-attachments/assets/011e9f4d-00a5-47e5-b9b5-53e079d7865f" />
-
+</p>
 
 
  This copies the folder from your phone to:
@@ -211,30 +215,12 @@ sms.csv
 calllog.csv
 mms.csv
 calendar.csv
-
+<p align=center>
 <img width="600" height="280" alt="Screenshot 2025-10-28 124533" src="https://github.com/user-attachments/assets/a777d5b7-8507-47ee-8341-d0172f761d39" />
-
-
----
-
-##  (Optional) STEP 9 — Verify Integrity (Hash Values)
-
-To maintain forensic integrity, calculate file hashes.
-
-*Windows (PowerShell):*
-powershell
-Get-FileHash "C:\Users\knsha\Downloads\ForensicLab\output\20251026.1721\Contacts Phones.csv" -Algorithm SHA256
-
-
-*Linux/macOS:*
-bash
-sha256sum ~/ForensicLab/output/contacts.csv
-
-
-
-Record the hash in your report.
+</p>
 
 ---
+
 
 ## STEP 10 — Clean Up
 
@@ -248,6 +234,15 @@ adb uninstall com.viaforensics.android.aflogical
  *Safely disconnect your device.*
 
 ---
+ # Rubrics
+  
+  | Criteria | Mark Allotted | Mark Awarded |
+  |---|---:|---:|
+  | 1. GitHub Activity & Submission Regularity | 3 | |
+  | 2. Application of Forensic Tools & Practical Execution | 3 | |
+  | 3. Documentation & Reporting | 2 | |
+  | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+  | *Total* | *10* | |
 
 
 
