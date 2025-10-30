@@ -54,8 +54,6 @@
   - This means the domain authorizes Mailgun servers to send emails on its behalf.  
 
 - *Relay Path:* The email originated from m241-136.mailgun.net (a Mailgun server).  
-
- *Conclusion:* Since the email came from an authorized Mailgun server, the SPF check passed successfully.  
   <br>
 <img width="1366" height="768" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/e4336f01-cd46-4495-9b35-e6f20edc06b5" />
   <br>
@@ -68,8 +66,17 @@
   <br>
 
 ---
-
-## Final Conclusion  
+ # Rubrics
+  
+  | Criteria | Mark Allotted | Mark Awarded |
+  |---|---:|---:|
+  | 1. GitHub Activity & Submission Regularity | 3 | |
+  | 2. Application of Forensic Tools & Practical Execution | 3 | |
+  | 3. Documentation & Reporting | 2 | |
+  | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+  | *Total* | *10* | |
+  ---
+## Result
 - *SPF Passed* → The sending server was authorized.  
 - *DMARC Passed* → The email is considered compliant overall.  
 
