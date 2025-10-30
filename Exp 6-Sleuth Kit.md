@@ -11,7 +11,8 @@ The Sleuth Kit (TSK) is a collection of command-line tools that allow you to ana
 
 1. **Download the Tool:**  
    - Head over to the official Sleuth Kit page or use this link:
-   - ## image 1
+   - ## ![WhatsApp Image 2025-10-30 at 22 23 07_58058664](https://github.com/user-attachments/assets/8c32a68a-9a38-4885-9aec-b5165aaaacab)
+
    - Choose the latest stable **Windows-compatible** version.
 
 2. **Installation Process:**  
