@@ -114,25 +114,22 @@ C:\Users\sleuthkit-4.14.0-win32\bin> mactime.pl -b C:\Forensics_Lab\body.txt > C
 
 ![timeline.txt Output](https://github.com/user-attachments/assets/8fb02a2a-82ac-44df-b29b-dfd21eb413f1)
 
+# Rubrics
+| Criteria | Mark Allotted | Mark Awarded |
+|---|:---:|:---:|
+| 1. GitHub Activity & Submission Regularity | 3 | |
+| 2. Application of Forensic Tools & Practical Execution | 3 | |
+| 3. Documentation & Reporting | 2 | |
+| 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+| **Total** | **10** | |
+
 ## Result
 
 By following these steps, we successfully used The Sleuth Kit to analyze the `4Dell Latitude CPi.E01` disk image. We were able to:
-
-- List the partition table (`mmls`) and identify the correct partition offset (63).
-- Analyze the file system metadata (`fsstat`).
-- List all files and directories, including deleted ones (`fls`).
 - Inspect the detailed metadata of a target file (`istat` on inode 9871).
 - Successfully recover the file `Mr. Evil.bmp` (`icat`).
 - Generate a full chronological timeline of all file system activity (`mactime`).
 
 All output files and recovered evidence are now stored in the `C:\Forensics_Lab` case folder, ready for reporting.
 
-## Notes
 
-**Important:** The Sleuth Kit tools are read-only. They do not write to the source image, which preserves the integrity of the evidence.
-
-The Sleuth Kit is the powerful command-line engine that graphical tools like Autopsy are built on. Learning TSK commands gives you a deeper understanding of how forensic analysis works.
-
-Always document your commands and findings. The output files (`.txt`) you create are part of your case notes and final report.
-
-The image offset (`-o 63`) is critical. If you analyze the wrong offset (e.g., the full disk at offset 0), your file system commands will fail.
